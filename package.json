@@ -1,0 +1,31 @@
+{
+  "name": "landify",
+  "version": "1.0.0",
+  "description": "trying to code with less",
+  "main": "index.js",
+  "scripts": {
+    "test": "landify!"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YankiiOz/landify.git"
+  },
+  "keywords": [
+    "less",
+    "code",
+    "more",
+    "landings"
+  ],
+  "author": "YankiiOzzyya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YankiiOz/landify/issues"
+  },
+  "homepage": "https://github.com/YankiiOz/landify#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1",
+    "gulp-sourcemaps": "^3.0.0"
+  },
+  "dependencies": {}
+}
