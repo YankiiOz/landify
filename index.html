@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./less/style.less">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -24,10 +24,6 @@
                     <a class="header-items__link" href="#"><li class="header-items__item">More</li></a>
                 </ul>
             </nav>
-            <div class="header-apps">
-                <img src="landify.images/google.svg" alt="#" class="header-apps__items">
-                <img src="landify.images/appstore.svg" alt="#" class="header-apps__items">
-            </div>
             </div>
             
             <section class="header-presentation">
@@ -36,7 +32,6 @@
                         Get more done.</p>
                     <button class="header-content__button" type="button">Get Started</button>
                 </div>
-                <img src="landify.images/phone.png" alt="#" class="header-presentation__image" width="320" height="620">
             </section>
         </div>
     </header>
@@ -70,6 +65,7 @@
             <h2 class="features-heading">Tailor-made features</h2>
             <p class="features-text">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
             <div class="container">
+                <div class="features-container">
                 <div class="features-items">
                     <img src="landify.images/icon-1.svg" alt="#" class="features-items__icon">
                     <h3 class="features-items__heading">Robust workflow</h3>
@@ -107,6 +103,7 @@
 
                 </div>
             </div>
+            </div>
         </section>
 
         <section class="feedback">
@@ -114,9 +111,9 @@
                 <h2 class="feedback-first-group__heading">Real Stories from Real Customers</h2>
                 <p class="feedback-first-group__text">Get inspired by these stories.</p>
                 <div class="feedback-hubspot">
-                    <img src="landify.images/hubspot.svg" alt="#" class="feedback-hubspot__logo" width="140" height="40">
+                    <img src="landify.images/hubspot.svg" alt="#" class="feedback-hubspot__logo">
                     <div class="feedback-container">
-                    <p class="feedback-hubspot__text">To quickly start my startup landing page design, I was looking for a landing page UI Kit. Landify is one of the best landing page UI kit I have come across. It’s so flexible, well organised and easily editable.</p>
+                    <p class="feedback-hubspot__text feedback-text">To quickly start my startup landing page design, I was looking for a landing page UI Kit. Landify is one of the best landing page UI kit I have come across. It’s so flexible, well organised and easily editable.</p>
                     <ul class="feedback-author">
                         <li class="feedback-author__name">Floyd Miles</li>
                         <li class="feedback-author__company">Vice President, GoPro</li>
@@ -128,7 +125,7 @@
                 <div class="feedback-airbnb">
                     <img src="landify.images/airbnb.svg" alt="#" class="feedback-airbnb__logo">
                     <div class="feedback-container">
-                    <p class="feedback-airbnb__text">I used landify and created a landing page for my startup within a week. The Landify UI Kit is simple and highly intuitive, so anyone can use it.</p>
+                    <p class="feedback-airbnb__text feedback-text">I used landify and created a landing page for my startup within a week. The Landify UI Kit is simple and highly intuitive, so anyone can use it.</p>
                     <ul class="feedback-author">
                         <li class="feedback-author__name">Jane Cooper</li>
                         <li class="feedback-author__company">CEO, Airbnb</li>
@@ -138,7 +135,7 @@
                 <div class="feedback-bookmyshow">
                     <img src="landify.images/bookmyshow.svg" alt="#" class="feedback-bookmyshow__logo">
                     <div class="feedback-container">
-                    <p class="feedback-bookmyshow__text">Landify saved our time in designing my company page.</p>
+                    <p class="feedback-bookmyshow__text feedback-text">Landify saved our time in designing my company page.</p>
                     <ul class="feedback-author">
                         <li class="feedback-author__name">Kristin Watson</li>
                         <li class="feedback-author__company">Co-Founder, BookMyShow</li>
@@ -146,44 +143,50 @@
                 </div>
                 </div>
             </div>
+        </div>
         </section>
 
         <section class="achievements">
-            <div class="container">
+            <div class="achievements-container">
             <div class="achievements-first">
                 <h2 class="achievements-first__heading">Our 18 years of achievements</h2>
                 <p class="achievements-first__text">With our super powers we have reached this</p>
             </div>
             <div class="achievements-second">
-                <ul class="achievements-second__indicators">
-                    <li class="achievents-second__number">10,000+</li>
+                <ul class="achievements-second__indicators achievements-distance">
+                    <li class="achievents-second__number achievements-background-1">10,000+</li>
                     <li class="achievents-second__description">Downloads per day</li>
                 </ul>
                 <ul class="achievements-second__indicators">
-                    <li class="achievents-second__number">500+</li>
-                    <li class="achievents-second__description">Clients</li>
-                </ul>
-                <ul class="achievements-second__indicators">
-                    <li class="achievents-second__number">2 Million</li>
+                    <li class="achievents-second__number achievements-background-2">2 Million</li>
                     <li class="achievents-second__description">Users</li>
                 </ul>
+                <ul class="achievements-second__indicators achievements-distance-right">
+                    <li class="achievents-second__number achievements-background-3">500+</li>
+                    <li class="achievents-second__description">Clients</li>
+                </ul>
+                
                 <ul class="achievements-second__indicators">
-                    <li class="achievents-second__number">140</li>
+                    <li class="achievents-second__number achievements-background-4">140</li>
                     <li class="achievents-second__description">Countries</li>
                 </ul>
             </div>
-        </div>
+            </div>
         </section>
 
         <section class="headline">
             <div class="container">
-                <img src="landify.images/half-phone.svg" alt="#" class="headline-image" width="340" height="340">
+                <div class="headline-container">
+                    <div class="image-container">
+                        <img src="landify.images/half-phone.svg" alt="#" class="headline-image">
+                    </div>
                 <div class="headline-content">
                     <h2 class="headline-content__heading">Headline</h2>
                     <p class="headline-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel.</p>
                     <button class="headline-content__button" type="button">Get started</button>
                 </div>
             </div>
+        </div>
         </section>
 
         <section class="first-example">
@@ -193,13 +196,14 @@
                     <p class="first-example__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis scelerisque at quam congue posuere libero in sit quam. Consequat, scelerisque non tincidunt sit lectus senectus.</p>
                 </div>
                 <div class="first-example-image">
-                    <img src="landify.images/lamps.jpg" alt="#" width="900" height="340">
+                    <img class="first-example-lamps" src="landify.images/lamps.jpg" alt="#">
                 </div>
             </div>
         </section>
 
         <section class="second-example">
             <div class="container">
+                <div class="example-container">
                 <div class="second-example-description">
                     <h2 class="second-example__heading">Manage your projects from your mobile</h2>
                     <p class="second-example__text">Download the app to manage your projects, keep track of the progress and complete tasks without procastinating. Stay on track and complete on time!</p>
@@ -210,30 +214,26 @@
                     <img src="landify.images/appstore.svg" alt="#" class="second-example__image">
                     </div>
                 </div>
-
-                <div class="second-example-images">
-                    <img src="landify.images/half-phone-2.png" alt="#" class="second-example__phone1">
-                    <img src="landify.images/half-phone-3.png" alt="#" class="second-example__phone2">
-                </div>
+            </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="container">
+            <div class="footer-container">
             <div class="footer-info">
-                <img src="landify.images/footer-logo.svg" alt="#" class="footer-logo">
                 <ul class="footer-docs">
-                    <li class="footer-docs__item">Download Now</li>
-                    <li class="footer-docs__item">License</li>
+                    <a class="footer-link" href="#"><li class="footer-docs__item">Download Now</li></a>
+                    <a class="footer-link" href="#"><li class="footer-docs__item">License</li></a>
                 </ul>
                 <ul class="footer-navigation">
-                    <li class="footer-navigation-item">About</li>
-                    <li class="footer-navigation-item">Features</li>
-                    <li class="footer-navigation-item">Pricing</li>
-                    <li class="footer-navigation-item">Careers</li>
-                    <li class="footer-navigation-item">Help</li>
-                    <li class="footer-navigation-item">Privacy Policy</li>
+                    <a class="footer-link" href="#"><li class="footer-navigation__item">About</li></a>
+                    <a class="footer-link" href="#"><li class="footer-navigation__item">Features</li></a>
+                    <a class="footer-link" href="#"><li class="footer-navigation__item">Pricing</li></a>
+                    <a class="footer-link" href="#"><li class="footer-navigation__item">Careers</li></a>
+                    <a class="footer-link" href="#"><li class="footer-navigation__item">Help</li></a>
+                    <a class="footer-link" href="#"><li class="footer-navigation__item">Privacy Policy</li></a>
                 </ul>
                 <p class="footer-rights">© 2020 Landify UI Kit. All rights reserved</p>
             </div>
@@ -241,8 +241,9 @@
             <div class="footer-get">
                 <p class="footer-get__app">Get the App</p>
                 <img src="landify.images/google.svg" alt="#" class="footer-get__img">
-                <img src="landify.images/appstore.svg" alt="#" class="footer-get__img">
+                <img src="landify.images/appstore.svg" alt="#" class="footer-get__img1">
             </div>
+        </div>
         </div>
     </footer>
 </body>
