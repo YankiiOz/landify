@@ -1,0 +1,824 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+.header {
+  background-image: url(../landify.images/background.png);
+  margin-bottom: 40px;
+  position: relative;
+}
+.container {
+  width: 100%;
+  padding-left: 165px;
+  padding-right: 165px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 120px;
+  padding-top: 20px;
+  position: relative;
+}
+.header-navigation {
+  margin-right: 150px;
+}
+.header-navigation::before {
+  content: "";
+  background-image: url(../landify.images/google.svg);
+  position: absolute;
+  width: 135px;
+  height: 40px;
+  top: 22px;
+  right: 65px;
+}
+.header-navigation::after {
+  content: "";
+  background-image: url(../landify.images/appstore.svg);
+  position: absolute;
+  width: 135px;
+  height: 40px;
+  top: 22px;
+  right: -77px;
+}
+.header-logo {
+  padding-right: 20px;
+}
+.header-items {
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  padding-left: 0;
+  position: relative;
+}
+.header-items__item {
+  padding-right: 30px;
+}
+.header-items__item::before {
+  content: "";
+  background-image: url(../landify.images/header-arrow.svg);
+  position: absolute;
+  width: 12px;
+  height: 6px;
+  top: 7px;
+  right: 12px;
+}
+.header-items__link {
+  text-decoration: none;
+  color: #18191f;
+}
+.header-items__item:hover {
+  color: #8c30f5;
+  transition: all 0.3s ease-in-out;
+}
+.header-presentation {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 300px;
+}
+.header-presentation::after {
+  content: "";
+  background-image: url(../landify.images/phone.png);
+  width: 379px;
+  height: 704px;
+  top: 96px;
+  right: 9px;
+  position: absolute;
+}
+.header-content__text {
+  font-size: 72px;
+  line-height: 98px;
+  font-weight: 800;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+.header-content__button {
+  border: none;
+  padding: 16px 41px;
+  color: #ffffff;
+  background-color: #8c30f5;
+  border-radius: 8px;
+}
+.header-content__button:hover {
+  background-color: #2ec5ce;
+  transition: all 0.3s ease-in-out;
+}
+.partners {
+  position: relative;
+}
+.partners-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.partners-container::before {
+  content: "";
+  background-image: url(../landify.images/divider.svg);
+  height: 1px;
+  width: 1110px;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+.partners-container::after {
+  content: "";
+  background-image: url(../landify.images/divider.svg);
+  height: 1px;
+  width: 1110px;
+  position: absolute;
+  bottom: 11px;
+  left: 50px;
+}
+.partners-logo {
+  padding: 57px 60px 57px 0px;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.features-heading {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+.features-text {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 80px;
+}
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.features-items {
+  max-width: 280px;
+  padding-right: 30px;
+  margin-bottom: 66px;
+}
+.features-items__heading {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+.feedback {
+  background-color: #D5FAFC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.feedback-first-group {
+  margin-left: 260px;
+}
+.feedback-first-group__heading {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 800;
+  max-width: 450px;
+  margin-bottom: 0;
+}
+.feedback-first-group::before {
+  content: "";
+  background-image: url(../landify.images/comma.svg);
+  position: absolute;
+  width: 142px;
+  height: 120px;
+  top: 151px;
+  left: 166px;
+  z-index: -1;
+}
+.feedback-first-group__text {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.feedback-hubspot {
+  position: relative;
+  max-width: 300px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align-last: left;
+  margin-left: 75px;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+}
+.feedback-hubspot__logo {
+  padding-left: 32px;
+  padding-top: 32px;
+  width: 140px;
+}
+.feedback-hubspot__text {
+  margin-top: 0;
+}
+.feedback-container {
+  padding: 32px 32px 30px 64px;
+}
+.feedback-author {
+  padding-left: 0;
+}
+.feedback-author__name {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.feedback-author__company {
+  color: #969bab;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.feedback-airbnb {
+  position: relative;
+  max-width: 330px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align-last: left;
+  margin-bottom: 32px;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+}
+.feedback-airbnb__logo {
+  padding-left: 32px;
+  padding-top: 32px;
+  width: 140px;
+}
+.feedback-airbnb__text {
+  margin-top: 0;
+}
+.feedback-bookmyshow {
+  position: relative;
+  max-width: 300px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align-last: left;
+  margin-bottom: 80px;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+}
+.feedback-bookmyshow__logo {
+  padding-left: 32px;
+  padding-top: 32px;
+  width: 140px;
+}
+.feedback-bookmyshow__text {
+  margin-top: 0;
+}
+.feedback-second-group {
+  margin-right: 260px;
+  margin-top: 257px;
+}
+.feedback-text::before {
+  content: "";
+  background-image: url(../landify.images/small-comma.svg);
+  width: 16px;
+  height: 14px;
+  position: absolute;
+  top: 83px;
+  left: 30px;
+}
+.achievements {
+  margin-bottom: 140px;
+  margin-top: 80px;
+}
+.achievements-container {
+  width: 100%;
+  padding-left: 165px;
+  padding-right: 165px;
+  display: flex;
+}
+.achievements-first__heading {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 800;
+  margin-bottom: 0;
+  margin-right: 130px;
+  margin-top: 0;
+}
+.achievements-first__text {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  margin-top: 0;
+}
+.achievements-second {
+  display: flex;
+  flex-wrap: wrap;
+}
+.achievents-second__number {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 800;
+}
+.achievements-second__indicators {
+  position: relative;
+  margin-top: 0;
+}
+.achievements-distance {
+  margin-right: 75px;
+}
+.achievements-distance-right {
+  margin-right: 140px;
+}
+.achievents-second__description {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.achievements-background-1::before {
+  content: "";
+  background-image: url(../landify.images/icon-1.svg);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 17px;
+  right: 148px;
+}
+.achievements-background-2::before {
+  content: "";
+  background-image: url(../landify.images/icon-4.svg);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 18px;
+  right: 130px;
+}
+.achievements-background-3::before {
+  content: "";
+  background-image: url(../landify.images/icon-2.svg);
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 21px;
+  right: 84px;
+}
+.achievements-background-4::before {
+  content: "";
+  background-image: url(../landify.images/icon-3.svg);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 20px;
+  right: 80px;
+}
+.headline {
+  margin-bottom: 130px;
+}
+.headline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headline-image {
+  max-width: 370px;
+  max-height: 370px;
+}
+.headline-content {
+  margin-left: 80px;
+  position: relative;
+}
+.headline-content__heading {
+  font-size: 40px;
+  line-height: 54px;
+  font-weight: 800;
+}
+.headline-content__text {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.headline-content__button {
+  border: none;
+  background-color: transparent;
+  color: #8c30f5;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.headline-content__button:hover {
+  color: #2ec5ce;
+  transition: all 0.3s ease-in-out;
+}
+.headline-content__button::before {
+  content: "";
+  background-image: url(../landify.images/headline-arrow.svg);
+  width: 22px;
+  height: 14px;
+  position: absolute;
+  bottom: 9px;
+  right: 287px;
+}
+.first-example {
+  margin-bottom: 70px;
+  padding-bottom: 290px;
+}
+.first-example-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.first-example__heading {
+  font-size: 40px;
+  line-height: 54px;
+  font-weight: 800;
+  max-width: 540px;
+}
+.first-example__text {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  max-width: 540px;
+  text-align: left;
+}
+.first-example-lamps {
+  max-width: 900px;
+  max-height: 340px;
+}
+.second-example {
+  background-color: #2ec5ce;
+  padding-bottom: 70px;
+  position: relative;
+}
+.second-example::before {
+  content: "";
+  background-image: url(../landify.images/half-phone-2.png);
+  position: absolute;
+  width: 285px;
+  height: 408px;
+  top: 0;
+  right: 265px;
+}
+.second-example::after {
+  content: "";
+  background-image: url(../landify.images/half-phone-3.png);
+  position: absolute;
+  width: 287px;
+  height: 408px;
+  bottom: 0;
+  right: 0px;
+}
+.example-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+}
+.second-example__heading {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 800;
+}
+.second-example__text {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.second-example__app {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+}
+.footer {
+  background-color: #0b0d17;
+  color: #ffffff;
+  padding-bottom: 56px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+}
+.footer-info::before {
+  content: "";
+  background-image: url(../landify.images/footer-logo.svg);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 56px;
+  left: 167;
+}
+.footer-docs {
+  padding-top: 115px;
+}
+.footer-docs,
+.footer-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.footer-docs__item,
+.footer-navigation__item {
+  padding-right: 24px;
+}
+.footer-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer-link:hover {
+  color: #969bab;
+}
+.footer-get {
+  display: flex;
+  flex-direction: column;
+}
+.footer-get__img1 {
+  padding-top: 17px;
+}
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .header-content__text {
+    font-size: 60px;
+    line-height: 86px;
+  }
+  .header-navigation {
+    margin-right: 0;
+    padding-right: 280px;
+  }
+  .header-navigation::before {
+    content: "";
+    background-image: url(../landify.images/google.svg);
+    position: absolute;
+    width: 135px;
+    height: 40px;
+    top: 22px;
+    right: 118px;
+  }
+  .header-navigation::after {
+    content: "";
+    background-image: url(../landify.images/appstore.svg);
+    position: absolute;
+    width: 135px;
+    height: 40px;
+    top: 22px;
+    right: -36px;
+  }
+  .feedback-second-group {
+    margin-left: 30px;
+    margin-right: 230px;
+  }
+  .headline-content__button::before {
+    content: "";
+    background-image: url(../landify.images/headline-arrow.svg);
+    width: 22px;
+    height: 14px;
+    position: absolute;
+    bottom: 9px;
+    right: 312px;
+  }
+  .first-example {
+    padding-bottom: 50px;
+  }
+  .second-example-description {
+    max-width: 350px;
+  }
+  .second-example::before {
+    content: "";
+    background-image: url(../landify.images/half-phone-2.png);
+    position: absolute;
+    width: 284px;
+    height: 408px;
+    top: 0;
+    right: 160px;
+  }
+  .second-example::after {
+    content: "";
+    background-image: url(../landify.images/half-phone-3.png);
+    position: absolute;
+    width: 287px;
+    height: 408px;
+    bottom: 0;
+    right: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .header-presentation::after {
+    display: none;
+  }
+  .header-navigation {
+    margin-right: 10px;
+    margin-top: 0px;
+  }
+  .header-navigation::before,
+  .header-navigation::after {
+    display: none;
+  }
+  .header-container {
+    margin-bottom: 0px;
+    margin-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 0;
+  }
+  .partners-container {
+    border-bottom: 1px solid #969bab;
+    border-top: 1px solid #969bab;
+  }
+  .partners-container::after {
+    display: none;
+  }
+  .partners-container::before {
+    display: none;
+  }
+  .headline-content__button::before {
+    content: "";
+    background-image: url(../landify.images/headline-arrow.svg);
+    width: 22px;
+    height: 14px;
+    position: absolute;
+    bottom: 9px;
+    right: 56px;
+  }
+  .feedback-first-group {
+    margin-left: 170px;
+  }
+  .feedback-hubspot,
+  .feedback-airbnb,
+  .feedback-bookmyshow {
+    width: 200px;
+  }
+  .first-example {
+    padding-bottom: 90px;
+  }
+  .first-example-lamps {
+    max-width: 650px;
+    max-height: 300px;
+  }
+  .first-example-description {
+    flex-direction: column;
+  }
+  .second-example::after,
+  .second-example::before {
+    display: none;
+  }
+  .footer-info {
+    margin-right: 30px;
+  }
+}
+@media (min-width: 374px) and (max-width: 414px) {
+  .container,
+  .achievements-container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    padding-left: 0;
+  }
+  .header-navigation {
+    padding-right: 0;
+  }
+  .header-items__item {
+    font-size: 12px;
+    padding-right: 10px;
+  }
+  .header-items__item::before {
+    content: "";
+    background-image: url(../landify.images/header-arrow.svg);
+    position: absolute;
+    width: 12px;
+    height: 6px;
+    top: 7px;
+    right: -8px;
+  }
+  .header-presentation::after {
+    display: none;
+  }
+  .header-navigation {
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  .header-navigation::before,
+  .header-navigation::after {
+    display: none;
+  }
+  .header-content__text {
+    margin-top: 0;
+    font-size: 40px;
+    line-height: 62px;
+    text-align: center;
+    margin-left: 30px;
+  }
+  .header-content__button {
+    margin-left: 90px;
+  }
+  .partners-container {
+    padding-left: 30px;
+  }
+  .feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .feedback-first-group {
+    margin-left: 0;
+  }
+  .feedback-first-group__heading,
+  .feedback-first-group__text {
+    padding-left: 10px;
+  }
+  .feedback-second-group {
+    margin-right: 53px;
+    margin-top: 0;
+  }
+  .feedback-airbnb {
+    margin-top: 30px;
+  }
+  .achievements-container,
+  .headline-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+  }
+  .achievements-first__heading {
+    margin-right: 10px;
+    text-align: center;
+  }
+  .achievements-second {
+    margin-left: 80px;
+    margin-top: 70px;
+  }
+  .headline-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .feedback-first-group::before {
+    content: "";
+    background-image: url(../landify.images/comma.svg);
+    position: absolute;
+    width: 142px;
+    height: 120px;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+  }
+  .headline-content {
+    margin-right: 30px;
+  }
+  .headline-content__button::before {
+    content: "";
+    background-image: url(../landify.images/headline-arrow.svg);
+    width: 22px;
+    height: 14px;
+    position: absolute;
+    bottom: 9px;
+    right: 70px;
+  }
+  .hedline-image {
+    display: none;
+  }
+  .first-example-description {
+    flex-direction: column;
+  }
+  .first-example {
+    padding-bottom: 10px;
+  }
+  .first-example-lamps {
+    max-width: 330px;
+    max-height: 300px;
+  }
+}
