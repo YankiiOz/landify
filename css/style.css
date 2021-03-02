@@ -297,7 +297,6 @@ ul {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  -moz-text-align-last: left;
   text-align-last: left;
   margin-left: 75px;
   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
@@ -334,7 +333,6 @@ ul {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  -moz-text-align-last: left;
   text-align-last: left;
   margin-bottom: 32px;
   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
@@ -354,7 +352,6 @@ ul {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  -moz-text-align-last: left;
   text-align-last: left;
   margin-bottom: 80px;
   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
@@ -503,15 +500,6 @@ ul {
   color: #2ec5ce;
   transition: all 0.3s ease-in-out;
 }
-.headline-content__button::before {
-  content: "";
-  background-image: url(../landify.images/headline-arrow.svg);
-  width: 22px;
-  height: 14px;
-  position: absolute;
-  bottom: 9px;
-  right: 287px;
-}
 .first-example {
   margin-bottom: 70px;
 }
@@ -536,9 +524,17 @@ ul {
   max-width: 540px;
   text-align: center;
 }
+.first-example-image {
+  position: relative;
+  padding: 10px;
+  padding-bottom: 360px;
+}
 .first-example-lamps {
-  max-width: 900px;
-  max-height: 340px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
 }
 .second-example {
   background-color: #2ec5ce;
@@ -676,15 +672,6 @@ ul {
     margin-left: 30px;
     margin-right: 230px;
   }
-  .headline-content__button::before {
-    content: "";
-    background-image: url(../landify.images/headline-arrow.svg);
-    width: 22px;
-    height: 14px;
-    position: absolute;
-    bottom: 9px;
-    right: 312px;
-  }
   .second-example-description {
     max-width: 350px;
   }
@@ -758,15 +745,6 @@ ul {
   .headline {
     margin-bottom: 40px;
   }
-  .headline-content__button::before {
-    content: "";
-    background-image: url(../landify.images/headline-arrow.svg);
-    width: 22px;
-    height: 14px;
-    position: absolute;
-    bottom: 9px;
-    right: 56px;
-  }
   .feedback-first-group {
     margin-left: 170px;
   }
@@ -775,9 +753,8 @@ ul {
   .feedback-bookmyshow {
     width: 200px;
   }
-  .first-example-lamps {
-    max-width: 650px;
-    max-height: 300px;
+  .first-example-image {
+    padding-bottom: 245px;
   }
   .example-container {
     max-width: 700px;
@@ -911,21 +888,11 @@ ul {
     margin-left: 20px;
     text-align: center;
   }
-  .headline-content__button::before {
-    content: "";
-    background-image: url(../landify.images/headline-arrow.svg);
-    width: 22px;
-    height: 14px;
-    position: absolute;
-    bottom: 9px;
-    right: 67px;
-  }
   .first-example-description {
     flex-direction: column;
   }
-  .first-example-lamps {
-    max-width: 375px;
-    max-height: 300px;
+  .first-example-image {
+    padding-bottom: 125px;
   }
   .footer-get {
     margin-top: 34px;
@@ -1045,24 +1012,14 @@ ul {
   .headline-content {
     margin-right: 30px;
   }
-  .headline-content__button::before {
-    content: "";
-    background-image: url(../landify.images/headline-arrow.svg);
-    width: 22px;
-    height: 14px;
-    position: absolute;
-    bottom: 9px;
-    right: 60px;
-  }
   .hedline-image {
     display: none;
   }
   .first-example-description {
     flex-direction: column;
   }
-  .first-example-lamps {
-    max-width: 335px;
-    max-height: 300px;
+  .first-example-image {
+    padding-bottom: 110px;
   }
   .second-example__heading {
     font-size: 40px;

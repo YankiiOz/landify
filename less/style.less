@@ -566,15 +566,6 @@ ul {
   transition: all 0.3s ease-in-out;
 }
 
-.headline-content__button::before {
-  content: "";
-  background-image: url(../landify.images/headline-arrow.svg);
-  width: 22px;
-  height: 14px;
-  position: absolute;
-  bottom: 9px;
-  right: 287px;
-}
 
 .first-example {
   margin-bottom: 70px;
@@ -600,9 +591,18 @@ ul {
   text-align: center;
 }
 
+.first-example-image {
+  position: relative;
+  padding: 10px;
+  padding-bottom: 360px;
+}
+
 .first-example-lamps {
-  max-width: 900px;
-  max-height: 340px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
 }
 
 .second-example {
@@ -714,12 +714,16 @@ ul {
   padding-top: 17px;
 }
 
+
+
+
 @media (max-width: 1024px) {
   .container {
     width: 100%;
     padding-left: 50px;
     padding-right: 50px;
   }
+
 
   .header-content__text {
     .header-media-font;
@@ -755,16 +759,7 @@ ul {
     margin-right: 230px;
   }
 
-  .headline-content__button::before {
-    content: "";
-    background-image: url(../landify.images/headline-arrow.svg);
-    width: 22px;
-    height: 14px;
-    position: absolute;
-    bottom: 9px;
-    right: 312px;
-  }
-
+  
   .second-example-description {
     max-width: 350px;
   }
@@ -849,15 +844,9 @@ ul {
   .headline {
     margin-bottom: 40px;
   }
-  .headline-content__button::before {
-    content: "";
-    background-image: url(../landify.images/headline-arrow.svg);
-    width: 22px;
-    height: 14px;
-    position: absolute;
-    bottom: 9px;
-    right: 56px;
-  }
+
+
+
   .feedback-first-group {
     margin-left: 170px;
   }
@@ -868,9 +857,8 @@ ul {
     width: 200px;
   }
 
-  .first-example-lamps {
-    max-width: 650px;
-    max-height: 300px;
+  .first-example-image {
+    padding-bottom: 245px;
   }
 
   .example-container {
@@ -1024,23 +1012,14 @@ ul {
     text-align: center;
   }
 
-  .headline-content__button::before {
-    content: "";
-    background-image: url(../landify.images/headline-arrow.svg);
-    width: 22px;
-    height: 14px;
-    position: absolute;
-    bottom: 9px;
-    right: 67px;
-  }
+  
 
   .first-example-description {
     flex-direction: column;
   }
 
-  .first-example-lamps {
-    max-width: 375px;
-    max-height: 300px;
+  .first-example-image {
+    padding-bottom: 125px;
   }
 
   .footer-get {
@@ -1174,15 +1153,7 @@ ul {
     margin-right: 30px;
   }
 
-  .headline-content__button::before {
-    content: "";
-    background-image: url(../landify.images/headline-arrow.svg);
-    width: 22px;
-    height: 14px;
-    position: absolute;
-    bottom: 9px;
-    right: 60px;
-  }
+  
   .hedline-image {
     display: none;
   }
@@ -1191,9 +1162,8 @@ ul {
     flex-direction: column;
   }
 
-  .first-example-lamps {
-    max-width: 335px;
-    max-height: 300px;
+  .first-example-image {
+    padding-bottom: 110px;
   }
 
   .second-example__heading {
