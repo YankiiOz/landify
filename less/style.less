@@ -4,10 +4,98 @@
 @footer-color: #0b0d17;
 @text-color: #18191f;
 @button-color: #8c30f5;
-@feedback-color: #D5FAFC;
+@feedback-color: #d5fafc;
 @heading-font: "Manrope", sans-serif;
 @heading-size: 48px;
 @text-size: 18px;
+
+.first-heading {
+  font-size: 72px;
+  line-height: 98px;
+  font-weight: 800;
+}
+
+.common-heading {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 800;
+}
+
+.middle-heading {
+  font-size: 40px;
+  line-height: 54px;
+  font-weight: 800;
+}
+
+.common-text {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.achievement-footer-font {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.navigation-font {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.second-sub-heading {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.author-name {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.author-company {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.achievement-num {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 800;
+}
+
+.headline-button-font {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.app-font {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.header-media-font {
+  font-size: 60px;
+  line-height: 86px;
+  font-weight: 800;
+}
+
+.min-media-font {
+  font-size: 12px;
+}
+
+.min-media-header {
+  font-size: 40px;
+  line-height: 62px;
+  font-weight: 800;
+}
 
 *,
 *::before,
@@ -51,7 +139,7 @@ ul {
 }
 
 .header-navigation {
-  margin-right: 150px;
+  margin-right: 260px;
 }
 
 .header-navigation::before {
@@ -80,9 +168,7 @@ ul {
 
 .header-items {
   display: flex;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 20px;
+  .navigation-font;
   padding-left: 0;
   position: relative;
 }
@@ -128,9 +214,7 @@ ul {
 }
 
 .header-content__text {
-  font-size: 72px;
-  line-height: 98px;
-  font-weight: 800;
+  .first-heading;
   margin-right: 50px;
   margin-bottom: 30px;
 }
@@ -192,15 +276,12 @@ ul {
 }
 
 .features-heading {
-  font-size: 48px;
-  line-height: 64px;
-  font-weight: 800;
+  .common-heading;
   margin-bottom: 0;
 }
 
 .features-text {
-  font-size: 18px;
-  line-height: 32px;
+  .common-text;
   margin-bottom: 80px;
 }
 
@@ -218,9 +299,7 @@ ul {
 }
 
 .features-items__heading {
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 600;
+  .second-sub-heading;
 }
 
 .feedback {
@@ -237,11 +316,10 @@ ul {
 }
 
 .feedback-first-group__heading {
-  font-size: 48px;
-  line-height: 64px;
-  font-weight: 800;
+  .common-heading;
   max-width: 450px;
   margin-bottom: 0;
+  margin-top: -83px;
 }
 
 .feedback-first-group::before {
@@ -250,15 +328,13 @@ ul {
   position: absolute;
   width: 142px;
   height: 120px;
-  top: 151px;
+  top: 47px;
   left: 166px;
   z-index: -1;
 }
 
 .feedback-first-group__text {
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 400;
+  .common-text;
   margin-top: 0;
   margin-bottom: 25px;
 }
@@ -292,16 +368,12 @@ ul {
 }
 
 .feedback-author__name {
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 700;
+  .author-name;
 }
 
 .feedback-author__company {
   color: @text-hover-color;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 500;
+  .author-company;
 }
 
 .feedback-airbnb {
@@ -350,7 +422,7 @@ ul {
 
 .feedback-second-group {
   margin-right: 260px;
-  margin-top: 257px;
+  margin-top: 155px;
 }
 
 .feedback-text::before {
@@ -376,18 +448,14 @@ ul {
 }
 
 .achievements-first__heading {
-  font-size: 48px;
-  line-height: 64px;
-  font-weight: 800;
+  .common-heading;
   margin-bottom: 0;
   margin-right: 130px;
   margin-top: 0;
 }
 
 .achievements-first__text {
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 400;
+  .common-text;
   margin-top: 0;
 }
 
@@ -397,9 +465,7 @@ ul {
 }
 
 .achievents-second__number {
-  font-size: 28px;
-  line-height: 40px;
-  font-weight: 800;
+  .achievement-num;
 }
 
 .achievements-second__indicators {
@@ -416,9 +482,7 @@ ul {
 }
 
 .achievents-second__description {
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 400;
+  .achievement-footer-font;
 }
 
 .achievements-background-1::before {
@@ -479,27 +543,22 @@ ul {
 .headline-content {
   margin-left: 80px;
   position: relative;
+  margin-bottom: 37px;
 }
 
 .headline-content__heading {
-  font-size: 40px;
-  line-height: 54px;
-  font-weight: 800;
+  .middle-heading;
 }
 
 .headline-content__text {
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 400;
+  .common-text;
 }
 
 .headline-content__button {
   border: none;
   background-color: transparent;
   color: @button-color;
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 700;
+  .headline-button-font;
 }
 
 .headline-content__button:hover {
@@ -519,29 +578,26 @@ ul {
 
 .first-example {
   margin-bottom: 70px;
-  padding-bottom: 290px;
 }
 
 .first-example-description {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   align-items: center;
   margin-bottom: 40px;
 }
 
 .first-example__heading {
-  font-size: 40px;
-  line-height: 54px;
-  font-weight: 800;
+  .middle-heading;
   max-width: 540px;
 }
 
 .first-example__text {
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 400;
+  .common-text;
   max-width: 540px;
-  text-align: left;
+  text-align: center;
 }
 
 .first-example-lamps {
@@ -583,22 +639,16 @@ ul {
 }
 
 .second-example__heading {
-  font-size: 48px;
-  line-height: 64px;
-  font-weight: 800;
+  .common-heading;
 }
 
 .second-example__text {
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 400;
+  .common-text;
   margin-bottom: 50px;
 }
 
 .second-example__app {
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 500;
+  .app-font;
 }
 
 .footer {
@@ -638,9 +688,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 400;
+  .achievement-footer-font;
 }
 
 .footer-docs__item,
@@ -674,8 +722,7 @@ ul {
   }
 
   .header-content__text {
-    font-size: 60px;
-    line-height: 86px;
+    .header-media-font;
   }
 
   .header-navigation {
@@ -718,10 +765,6 @@ ul {
     right: 312px;
   }
 
-  .first-example {
-    padding-bottom: 50px;
-  }
-
   .second-example-description {
     max-width: 350px;
   }
@@ -751,9 +794,13 @@ ul {
     display: none;
   }
 
+  .header-logo {
+    padding-right: 145px;
+  }
+
   .header-navigation {
-    margin-right: 10px;
     margin-top: 0px;
+    padding-right: 115px;
   }
   .header-navigation::before,
   .header-navigation::after {
@@ -761,7 +808,6 @@ ul {
   }
 
   .header-container {
-    margin-bottom: 0px;
     margin-bottom: 100px;
     padding-left: 100px;
     padding-right: 0;
@@ -779,6 +825,30 @@ ul {
     display: none;
   }
 
+  .feedback-first-group::before {
+    content: "";
+    background-image: url(../landify.images/comma.svg);
+    position: absolute;
+    width: 142px;
+    height: 120px;
+    top: 47px;
+    left: 18px;
+    z-index: -1;
+  }
+
+  .achievements {
+    margin-bottom: 50px;
+  }
+
+  .achievements-container {
+    align-items: center;
+    padding-left: 104px;
+    padding-right: 104px;
+  }
+
+  .headline {
+    margin-bottom: 40px;
+  }
   .headline-content__button::before {
     content: "";
     background-image: url(../landify.images/headline-arrow.svg);
@@ -798,16 +868,13 @@ ul {
     width: 200px;
   }
 
-  .first-example {
-    padding-bottom: 90px;
-  }
-
   .first-example-lamps {
     max-width: 650px;
     max-height: 300px;
   }
-  .first-example-description {
-    flex-direction: column;
+
+  .example-container {
+    max-width: 700px;
   }
 
   .second-example::after,
@@ -820,7 +887,8 @@ ul {
   }
 }
 
-@media (min-width: 374px) and (max-width: 414px) {
+@media (max-width: 414px) {
+
   .container,
   .achievements-container {
     width: 100%;
@@ -828,20 +896,29 @@ ul {
     padding-right: 20px;
   }
 
+  .header-logo {
+    padding-right: 25px;
+  }
+
+  .header-content__text {
+    margin-top: 0;
+    .min-media-header;
+    text-align: center;
+    margin-left: 48px;
+  }
+  .header-content__button {
+    margin-left: 111px;
+  }
+
   .header-container {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
     padding-left: 0;
   }
-
-  .header-navigation {
-    padding-right: 0;
-  }
   .header-items__item {
-    font-size: 12px;
+    .min-media-font;
     padding-right: 10px;
   }
 
@@ -854,80 +931,50 @@ ul {
     top: 7px;
     right: -8px;
   }
+  .header-navigation {
+    padding-right: 0;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
   .header-presentation::after {
     display: none;
   }
 
-  .header-navigation {
-    margin-right: 10px;
-    margin-top: 20px;
-  }
   .header-navigation::before,
   .header-navigation::after {
     display: none;
   }
-
-  .header-content__text {
-    margin-top: 0;
-    font-size: 40px;
-    line-height: 62px;
-    text-align: center;
-    margin-left: 30px;
-  }
-
-  .header-content__button {
-    margin-left: 90px;
-  }
-
   .partners-container {
-    padding-left: 30px;
+    padding-left: 52px;
   }
 
   .feedback {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
+  .features-items {
+    padding-right: 0;
+  }
+
   .feedback-first-group {
-    margin-left: 0;
+    margin-top: 145px;
+    margin-left: 20px;
   }
 
   .feedback-first-group__heading,
   .feedback-first-group__text {
-    padding-left: 10px;
+    margin-left: 20px;
   }
 
-  .feedback-second-group {
-    margin-right: 53px;
-    margin-top: 0;
-  }
-
-  .feedback-airbnb {
-    margin-top: 30px;
-  }
-
-  .achievements-container,
-  .headline-container {
-    display: flex;
-    flex-direction: column;
-    padding-left: 30px;
-  }
-
-  .achievements-first__heading {
-    margin-right: 10px;
-    text-align: center;
-  }
-
-  .achievements-second {
-    margin-left: 80px;
-    margin-top: 70px;
-  }
-  .headline-container {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
+  .feedback-hubspot,
+  .feedback-airbnb,
+  .feedback-bookmyshow {
+    width: 300px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
   }
 
   .feedback-first-group::before {
@@ -941,6 +988,188 @@ ul {
     z-index: -1;
   }
 
+  .feedback-second-group {
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .achievements-container {
+    flex-direction: column;
+  }
+
+  .achievements-first__heading {
+    margin-right: 10px;
+    text-align: center;
+  }
+  .achievements-first__text {
+    margin-left: 20px;
+    text-align: center;
+  }
+  .achievements-second {
+    margin-left: 116px;
+    margin-top: 70px;
+  }
+
+  .headline {
+    margin-bottom: 10px;
+  }
+  .headline-container {
+    padding-left: 0;
+    flex-direction: column;
+  }
+
+  .headline-content {
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+  }
+
+  .headline-content__button::before {
+    content: "";
+    background-image: url(../landify.images/headline-arrow.svg);
+    width: 22px;
+    height: 14px;
+    position: absolute;
+    bottom: 9px;
+    right: 67px;
+  }
+
+  .first-example-description {
+    flex-direction: column;
+  }
+
+  .first-example-lamps {
+    max-width: 375px;
+    max-height: 300px;
+  }
+
+  .footer-get {
+    margin-top: 34px;
+  }
+}
+
+@media (max-width: 376px) {
+  .container,
+  .achievements-container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    padding-left: 0;
+  }
+
+  .header-navigation {
+    padding-right: 0;
+  }
+  .header-items__item {
+    .min-media-font;
+    padding-right: 10px;
+  }
+
+  .header-items__item::before {
+    content: "";
+    background-image: url(../landify.images/header-arrow.svg);
+    position: absolute;
+    width: 12px;
+    height: 6px;
+    top: 7px;
+    right: -8px;
+  }
+  .header-navigation {
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  .header-content__text {
+    margin-top: 31px;
+    .min-media-header;
+    text-align: center;
+    margin-left: 14px;
+    margin-right: 0;
+  }
+
+  .header-content__button {
+    margin-left: 97px;
+  }
+
+  .partners-container {
+    padding-left: 47px;
+  }
+
+  .features-heading {
+    .middle-heading;
+  }
+
+  .features-text {
+    max-width: 345px;
+  }
+
+  .feedback {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .feedback-first-group {
+    margin-left: 0;
+  }
+
+  .feedback-first-group__heading {
+    .middle-heading;
+    max-width: 345px;
+  }
+
+  .feedback-first-group__heading,
+  .feedback-first-group__text {
+    padding-left: 42px;
+  }
+
+  .feedback-second-group {
+    margin-right: 26px;
+    margin-top: 0;
+  }
+
+  .feedback-airbnb {
+    margin-top: 30px;
+  }
+
+
+  .feedback-first-group::before {
+    content: "";
+    background-image: url(../landify.images/comma.svg);
+    position: absolute;
+    width: 142px;
+    height: 120px;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+  }
+  .achievements-container {
+    flex-direction: column;
+    padding-left: 30px;
+  }
+
+  .achievements-first__heading {
+    margin-right: 10px;
+    text-align: center;
+    .middle-heading;
+  }
+
+  .achievements-second {
+    margin-left: 110px;
+    margin-top: 43px;
+  }
+  .headline-container {
+    flex-direction: column;
+    padding-left: 0;
+  }
+
   .headline-content {
     margin-right: 30px;
   }
@@ -952,7 +1181,7 @@ ul {
     height: 14px;
     position: absolute;
     bottom: 9px;
-    right: 70px;
+    right: 60px;
   }
   .hedline-image {
     display: none;
@@ -962,12 +1191,15 @@ ul {
     flex-direction: column;
   }
 
-  .first-example {
-    padding-bottom: 10px;
+  .first-example-lamps {
+    max-width: 335px;
+    max-height: 300px;
   }
 
-  .first-example-lamps {
-    max-width: 330px;
-    max-height: 300px;
+  .second-example__heading {
+    .middle-heading;
+  }
+  .footer-get {
+    margin-top: -16px;
   }
 }
